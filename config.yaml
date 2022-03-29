@@ -1,0 +1,321 @@
+baseURL: "https://example.org"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+Paginate: 3
+disqusShortname: gurusabarish
+googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+
+    #Dropdown menu
+    - identifier: dropdown
+      title: Example dropdown menu
+      name: Dropdown
+      weight: 2
+    - identifier: dropdown1
+      title: example dropdown 1
+      name: example 1
+      url: /#
+      parent: dropdown
+      weight: 1
+    - identifier: dropdown2
+      title: example dropdown 2
+      name: example 2
+      url: /#
+      parent: dropdown
+      weight: 2
+
+params:
+  title: "NIIIIIIIIII"
+  description: Text about my cool site
+  favicon: #"/fav.png"
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor: 
+  #   secondaryTextColor: 
+  #   backgroundColor: 
+  #   secondaryBackgroundColor: 
+  #   primaryColor: 
+  #   secondaryColor: 
+
+  #   darkmode:
+  #     textColor: 
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Naruki Ichihara."
+    subtitle: "Growth structures"
+    content: "A passionate mechanical engineer. I tend to fabricate high performance structures with a computation."
+    image: /images/hero.jpeg
+    #button:
+    #  enable: true
+    #  name: "Research Gate"
+    #  url: "https://www.researchgate.net/profile/Naruki-Ichihara-2"
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Naruki-Ichihara
+        - icon: fab fa-google
+          url: https://scholar.google.com/citations?user=aOAOZYMAAAAJ&hl=ja
+        - icon: fab fa-researchgate
+          url: https://www.researchgate.net/profile/Naruki-Ichihara-2
+      #customIcons:
+      #  - icon: /fav.png
+      #    url: "https://example.com"
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: '/images/hero.jpeg'
+    content: |-
+      I am a mechanical enginner in advanced material engineering. I have a background in material enginnering and composites, and I have a strong interest in the intersection of artificial and natural structures. I am currently working as an assistant at [Ueda lab., Nihon university](http://www.mech.cst.nihon-u.ac.jp/studies/ueda/) in Tokyo, Japan. 
+      
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "3D printing"
+        - "Topology Optimization"
+        - "Lightweight structures"
+        - "Structural integrity"
+        - "FEniCS"
+
+  # Experience
+  experience:
+    enable: true
+    items:
+      - job: "Faculty (Assistant)"
+        company: "Nihon University"
+        companyUrl: "https://www.nihon-u.ac.jp/en/"
+        date: "April 2022 - present"
+        featuredLink:
+          enable: true
+          name: "Lab page"
+          url: "http://www.mech.cst.nihon-u.ac.jp/studies/ueda/"
+        info:
+          enable: true
+          content: "I am currently working as a faculity (assistant) at collage of science and technologies."
+        content: |
+          Researchs:
+
+          - Optimized design of a 3D-printed composite materials.
+          - Structural integrity of a fillament wound composites for pressure vessels.
+
+          Lectures:
+
+          - Mechanical Engineering Experiments II-A
+          - Mechanical Engineering Experiments II-B
+          - Mechanical Draft and Design
+      
+      - job: "Teaching Assistant (Part time)"
+        company: "Nihon University"
+        companyUrl: "https://www.nihon-u.ac.jp/en/"
+        date: "April 2020 - March 2022"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+        content: |
+          Lectures:
+
+          - Mechanical Engineering Experiments II-A
+          - Mechanical Engineering Experiments II-B
+
+      - job: "Material Engineer (Permanent)"
+        company: "Mitsubishi Motors"
+        companyUrl: "https://www.mitsubishi-motors.com/en/?intcid2=global_site"
+        date: "April 2019 - March 2020"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+        content: |
+          R&D and planning of the lightweight materials.
+  
+  # Education
+  education:
+    enable: true
+    index: true
+    items:
+      - title: "Master of Engineering"
+        school:
+          name: "Nihon University, Tokyo"
+          url: "https://example.org"
+        date: "2020 - 2022"
+        GPA: "3.9 out of 4.0"
+        content: |-
+          Awards:
+
+            - Miura Prize, The Japan Society of Mechanical Engineers
+
+          Publications:
+
+            - [3D-print infill generation using the biological phase field of an optimized discrete material orientation vector field](https://doi.org/10.1016/j.compositesb.2022.109626)
+
+      - title: "Bachelor of Science in Mechanical Enginnering"
+        school:
+          name: "Nihon University, Tokyo"
+          url: "https://example.org"
+        date: "2016 - 2019"
+        GPA: "3.8 out of 4.0"
+        content: |-
+          Awards:
+
+            - Hatakeyama Prize, The Japan Society of Mechanical Engineers
+
+          Publications:
+
+            - [Progressive damage simulation for a 3D-printed curvilinear continuous carbon fiber-reinforced thermoplastic based on continuum damage mechanics](https://doi.org/10.1080/09243046.2020.1724430)
+
+        featuredLink:
+          enable: false
+          name: "My academic record"
+          url: "https://example.com"
+      
+  # Achievements
+  achievements:
+    enable: true
+    items:  
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+  
+  # Papers
+  papers:
+    enable: true
+    items:  
+      - title: Progressive damage simulation for a 3D-printed curvilinear continuous carbon fiber-reinforced thermoplastic based on continuum damage mechanics
+        content: Research paper (2020)
+        url: https://doi.org/10.1080/09243046.2020.1724430
+      - title: 3D-print infill generation using the biological phase field of an optimized discrete material orientation vector field
+        content: Research paper (2022)
+        url: https://doi.org/10.1016/j.compositesb.2022.109626
+      - title: Continuum damage mechanics modelling of a 3D printed curvilinear CFRTP
+        content: Proceedings (2019)
+        url: https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=aOAOZYMAAAAJ&citation_for_view=aOAOZYMAAAAJ:u-x6o8ySG0sC
+      
+
+  talks:
+    enable: false
+    items:  
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+
+  # projects
+  projects:
+    enable: true
+    items:
+      - title: Hugo Profile
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://hugo-profile.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/hugo-profile
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      
+      - title: Image Converter
+        content:  A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+        image: /images/projects/converter.jpg
+        featured:
+          name: Demo
+          link: https://django-converter.herokuapp.com
+        # badges:
+        #   - "Django"
+        #   - "Bootstrap"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/converter
+      
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Demo V2
+          link: https://hugo-profile-2.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: csna20005@g.nihon-u.ac.jp
+    btnName: Mail me
+
+  footer:
+    # recentPosts: false
+    #socialNetworks:
+    #  github: https://github.com
+    #  linkedin: https://linkedin.com
+    #  twitter: https://twitter.com
+    #  instagram: https://instagram.com
+    #  facebook: https://facebook.com
+
+
