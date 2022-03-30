@@ -1,6 +1,6 @@
 baseURL: "https://naruki-ichihara.com"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Hi, I'm Naruki"
 theme: hugo-profile
 
 Paginate: 3
@@ -21,22 +21,22 @@ Menus:
       weight: 1
 
     #Dropdown menu
-    - identifier: dropdown
-      title: Example dropdown menu
-      name: Dropdown
-      weight: 2
-    - identifier: dropdown1
-      title: example dropdown 1
-      name: example 1
-      url: /#
-      parent: dropdown
-      weight: 1
-    - identifier: dropdown2
-      title: example dropdown 2
-      name: example 2
-      url: /#
-      parent: dropdown
-      weight: 2
+    #- identifier: dropdown
+    #  title: Example dropdown menu
+    #  name: Dropdown
+    #  weight: 2
+    #- identifier: dropdown1
+    #  title: example dropdown 1
+    #  name: example 1
+    #  url: /#
+    #  parent: dropdown
+    #  weight: 1
+    #- identifier: dropdown2
+    #  title: example dropdown 2
+    #  name: example 2
+    #  url: /#
+    #  parent: dropdown
+    #  weight: 2
 
 params:
   title: "NIIIIIIIIII"
@@ -87,7 +87,7 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
+    intro: "Hi, I am"
     title: "Naruki Ichihara."
     subtitle: "Growth structures"
     content: "A passionate mechanical engineer. I tend to fabricate high performance structures with a computation."
@@ -125,7 +125,6 @@ params:
         - "Topology Optimization"
         - "Lightweight structures"
         - "Structural integrity"
-        - "FEniCS"
 
   # Experience
   experience:
@@ -221,7 +220,7 @@ params:
       
   # Achievements
   achievements:
-    enable: true
+    enable: false
     items:  
       - title: Google kickstart runner
         content: I solved all problems with optimal solution.
@@ -232,17 +231,14 @@ params:
   # Papers
   papers:
     enable: true
+    url: https://www.scopus.com/authid/detail.uri?authorId=57215027147
     items:  
-      - title: Progressive damage simulation for a 3D-printed curvilinear continuous carbon fiber-reinforced thermoplastic based on continuum damage mechanics
-        content: Research paper (2020)
-        url: https://doi.org/10.1080/09243046.2020.1724430
       - title: 3D-print infill generation using the biological phase field of an optimized discrete material orientation vector field
-        content: Research paper (2022)
+        content: Composites Part B Engineering (2022)
         url: https://doi.org/10.1016/j.compositesb.2022.109626
-      - title: Continuum damage mechanics modelling of a 3D printed curvilinear CFRTP
-        content: Proceedings (2019)
-        url: https://scholar.google.com/citations?view_op=view_citation&hl=ja&user=aOAOZYMAAAAJ&citation_for_view=aOAOZYMAAAAJ:u-x6o8ySG0sC
-      
+      - title: Progressive damage simulation for a 3D-printed curvilinear continuous carbon fiber-reinforced thermoplastic based on continuum damage mechanics
+        content: Advanced Composite materials (2020)
+        url: https://doi.org/10.1080/09243046.2020.1724430
 
   talks:
     enable: false
@@ -255,7 +251,7 @@ params:
 
   # projects
   projects:
-    enable: true
+    enable: false
     items:
       - title: Hugo Profile
         content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
@@ -310,12 +306,15 @@ params:
     btnName: Mail me
 
   footer:
-    # recentPosts: false
+    recentPosts: false
     #socialNetworks:
     #  github: https://github.com
     #  linkedin: https://linkedin.com
     #  twitter: https://twitter.com
     #  instagram: https://instagram.com
     #  facebook: https://facebook.com
+
+  copyright:
+    Naruki Ichihara.
 
 
